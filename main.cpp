@@ -17,10 +17,10 @@ int main()
     //led = 0.5f;          // shorthand for led.write()
     //led.pulsewidth(2);   // alternative to led.write, set duty cycle time in seconds
     while (1){
-        led.period(0.05f);      // 4 second period
+        led.period(0.05f);      // 50 ms period
         led.write(0.1f);
         ThisThread::sleep_for(1s);
-        led.period(0.05f);      // 4 second period
+        led.period(0.05f);      // 50 ms period
         led.write(0.5f);
         ThisThread::sleep_for(1s);
     };
